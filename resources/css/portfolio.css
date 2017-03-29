@@ -71,8 +71,16 @@ header button:first-of-type{
 	color: white;
 } 
 nav{
-	margin-bottom: 0 !important;
+	margin-bottom: -45px !important;
 }
+
+.nav_fxd{
+	z-index: 150;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
 .navbar{
 	border-radius: 0;	
 }
@@ -124,7 +132,7 @@ nav{
 /*================================================================*/
 
 .welcome{
-	padding-top: 30px;
+	padding-top: 105px;
 	padding-bottom:  30px;
 	position: relative;
 }

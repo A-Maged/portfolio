@@ -3,11 +3,11 @@
 
 
 $(window).scroll(function(){
-	if( $(this).scrollTop() > 600){
-		$("nav").addClass("navbar-fixed-top");
+	if( $(this).scrollTop() > 615){
+		$("nav").addClass("nav_fxd");
 	}
 	else{
-		$("nav").removeClass("navbar-fixed-top");		
+		$("nav").removeClass("nav_fxd");		
 	}
 
 

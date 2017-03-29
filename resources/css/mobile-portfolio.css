@@ -68,10 +68,16 @@
 	header p{
 		width: inherit;
 	}
-		.navbar-brand{
-			position: relative !important;
-			/*float: left;*/
-		}
+	.navbar-brand{
+		position: relative !important;
+		/*float: left;*/
+	}
+
+
+	.icons {
+		float: none !important;
+		text-align: center;
+	}	
 
 
 	/* WELCOME */
