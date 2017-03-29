@@ -25,7 +25,7 @@ body{
 header{
 	/*height: 93vh;*/
 	height: calc(100vh - 50px);
-	background: url('portfolio/resources/images/1.png') no-repeat center;
+	background: url('images/1.png') no-repeat center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -141,7 +141,7 @@ nav{
 }
 
 .welcome_img{
-	background:url('portfolio/resources/images/model0.png') no-repeat;
+	background:url('images/model0.png') no-repeat;
 	width: 30%;
 	height: 500px
 }
@@ -186,7 +186,7 @@ nav{
 	/*background-color: #F8F8F8;*/
 	/*color: #0C0C0C;*/
 	color: white;
-	background:url('portfolio/resources/images/cards-test.png') center no-repeat;
+	background:url('images/cards-test.png') center no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -242,7 +242,7 @@ nav{
 /*passion*/
 /*================================================================*/
 .passion{
-	background:url('portfolio/resources/images/2.png') no-repeat center;
+	background:url('images/2.png') no-repeat center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -437,7 +437,7 @@ nav{
 /*contact*/
 /*================================================================*/
 .contact{
-	background: url('portfolio/resources/images/background.png');
+	background: url('images/background.png');
 }
 .contact .overlay{
 	padding-top:  70px;
