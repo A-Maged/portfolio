@@ -2,6 +2,19 @@
 
 
 
+$(window).scroll(function(){
+	if( $(this).scrollTop() > 100vh){
+		$("nav").addClass("navbar-fixed-top");
+	}
+	else{
+		$("nav").removeClass("navbar-fixed-top");		
+	}
+
+
+});
+
+
+
 // utilize Animate.css animations on click
 animateOnClick( "button" , "fadeIn", 3000)
 function animateOnClick(selector , effect , animatDurationMs){
