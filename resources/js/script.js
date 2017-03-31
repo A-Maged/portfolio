@@ -1,7 +1,18 @@
 'use strict';
 
 
+// smooth scroll
+$(document).on('click', 'a', function(e){
+	e.preventDefault();
+	var body = $('body');	// cache for performance
+	var x = ($( $.attr(this, 'href') ).offset().top) -51;
+	body.animate({
+		scrollTop: x
+	}, 900);
+});
 
+
+// fixed nav
 $(window).scroll(function(){
 	if( $(this).scrollTop() > 615){
 		$("nav").addClass("nav_fxd");
@@ -9,8 +20,6 @@ $(window).scroll(function(){
 	else{
 		$("nav").removeClass("nav_fxd");		
 	}
-
-
 });
 
 
@@ -31,6 +40,8 @@ function animateOnClick(selector , effect , animatDurationMs){
 }
 
 
+
+// animate Resume_button on half scroll
 $(window).scroll(function(){
 	var aTop = $('.welcome').height();
 	
@@ -48,28 +59,3 @@ $(window).scroll(function(){
 
 });// scroll event ends
 
-
-// animateOnClick( "nav li" , "infinite bounce ", 1000)
-
-// function animateOnClick( selector , effect , animatDurationMs){
-// 	for (var i = 0 ; i < $(selector).length; i++) {
-// 		var jq_elem = $(selector+":nth-of-type("+i+")") 
-// 		bindAnimation( jq_elem , effect, animatDurationMs)
-// 	}
-
-// 	function bindAnimation( jq_element , effect , animatDurationMs){
-// 		jq_element.click(
-// 			function myFunction() {
-// 				setTimeout(function(){ 
-// 					jq_element.removeClass("animated "+ effect); 
-// 				},
-// 					animatDurationMs
-// 				);
-
-// 				jq_element.toggleClass("animated "+effect);
-// 			}
-// 		);
-// 	}
-
-// }
-		

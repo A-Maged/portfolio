@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  	<!-- <base href="/portfolio"> -->
+	<!-- comment out when working localy -->  	<!-- <base href="https://a-maged.github.io/portfolio/"></base> -->
 	<meta charset="utf-8">
-	<base href="https://a-maged.github.io/portfolio/"></base>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<!-- normalize css --> <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css">	
 	<!-- aos css --> <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
-	<!-- aos js --> <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
 	<!-- animate css --> <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<!-- bootstrap css -->	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!-- font-awesome css -->  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">	
@@ -18,13 +16,6 @@
 <title>PSD Portfolio</title>
 </head>
 <body>
-
-<script type="text/javascript">
-	AOS.init({
-	  duration: 500,
-    	})
-</script>
-
 
 
 <!-- Header -->
@@ -62,20 +53,19 @@
 		</div>	<!-- .navbar-header -->
 	
 		<div class="collapse  navbar-collapse" id="bs-example-navbar-collapse-1">
-			<ul class="nav visible-xs hidden-sm visible-md visible-lg  icons navbar-nav navbar-right">
+			<ul class="icons nav visible-xs hidden-sm visible-md visible-lg  navbar-nav navbar-right">
 				<div>
 					<a href="#1"><i class="fa fa-lg fa-facebook-square" aria-hidden="true"></i></a>
 					<a href="#2"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>
 					<a href="#4"><i class="fa fa-lg fa-github" aria-hidden="true"></i></a>
 					<a href="#3"><i class="fa fa-lg fa-google-plus" aria-hidden="true"></i></a>
 				</div> <!-- .icons end -->
-
 			</ul>
 
 			<ul class="nav navbar-nav navbar-left">
   				<li class="active"><a href="#">HOME</a></li>
   				<!-- <li ><a href="#">RESUME</a></li> -->
-  				<li ><a class="scroll" href="#why" >ABOUT</a></li>
+  				<li ><a class="scroll" href="#whyy" >ABOUT</a></li>
   				<li ><a class="scroll" href="#p_work">RECENT WORK</a></li>
   				<li ><a class="scroll" href="#clients">PREVIOUS CLIENTS</a></li>
   				<li ><a class="scroll" href="#contact">CONTACT</a></li>
@@ -133,7 +123,6 @@
 
 		</div> 	<!-- .row -->
 	</div>	<!-- .container -->
-	<!-- for scrolling only --><div id="why"></div>
 </section>
 
 
@@ -142,7 +131,7 @@
 
 <!-- why -->
 <!-- ================================ -->
-<section class="why">
+<section class="why" id="whyy">
 	<div class="overlay">
 		<div class="container">
 			<div class="row">
@@ -407,7 +396,7 @@
 
 <!-- contact -->
 <!-- ================================ -->
-<section class="contact"id="contact">
+<section class="contact" id="contact">
 	<div class="overlay">
 		<div class="container">
 			<h3>CONTACT WITH US</h3>
@@ -438,15 +427,48 @@
 </section>
 
 
+<!-- <footer>
+	<div class="trapezoid">
+		<div class="footer_icons">
 
+			<a href="#1">
+				<div class="f_icon">
+						<i class="fa fa-lg fa-facebook" aria-hidden="true"></i>
+				</div>
+			</a>
+			<a href="#1">
+				<div class="f_icon">
+						<i class="fa fa-lg fa-twitter" aria-hidden="true"></i>
+				</div>
+			</a>
+			<a href="#1">
+				<div class="f_icon">
+						<i class="fa fa-lg fa-github" aria-hidden="true"></i>
+				</div>
+			</a>
+			<a href="#1">
+				<div class="f_icon">
+						<i class="fa fa-lg fa-google-plus" aria-hidden="true"></i>
+				</div>
+			</a>
+			
+ -->		
+		<!-- </div> -->	<!-- .footer_icons -->
+	<!-- </div> -->	<!-- .trapezoid -->
+<!-- </footer> -->
 
 
 
 
 
 <!-- jQuery --><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- aos js --> <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+<script type="text/javascript">
+	AOS.init({
+	  duration: 500,
+    	})
+</script>
 <!-- Bootstrap js --><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<!-- scroll js --><script type="text/javascript" src="resources/js/scroll.min.js"></script>
 <!-- custom js --><script type="text/javascript" src="resources/js/script.js"></script>
 
 </body>

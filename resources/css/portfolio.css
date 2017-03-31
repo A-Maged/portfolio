@@ -6,7 +6,7 @@
 
 
 /* General */
-/*=================================*/
+/*================================================================*/
 *{
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -20,7 +20,7 @@ body{
 
 
 /* Header */
-/*=================================*/
+/*================================================================*/
 
 header{
 	/*height: 93vh;*/
@@ -70,9 +70,15 @@ header button:first-of-type{
 	background-color: #14c3dc;	
 	color: white;
 } 
+
+
+
+
+/* nav */
+/*================================================================*/
+
 nav{
 	margin-bottom: -45px !important;
-	/*margin-bottom: -45px !important;*/
 }
 
 .nav_fxd{
@@ -109,23 +115,28 @@ nav{
 }
 
 
-.icons {
+nav .icons {
 	padding:15px 0;
 }
-.icons a{
+nav .icons a{
 		margin: 0 10px ;
 }
-.icons i{
+nav .icons i{
 	/*color: white;*/
 	/*font-size: 19px;*/
 }
-.fa-facebook-square{color: #3B5998;}
-.fa-twitter{ color:#1DA1F2 }
-.fa-google-plus{ color:#DB4437 }
-.fa-github{ color:#800080 }
+.fa-facebook-square:hover , .fa-facebook:hover{color: #3B5998;}
+.fa-twitter:hover{ color:#337ab7 }
+.fa-google-plus:hover{ color:#DB4437 }
+.fa-github:hover{ color:#800080 }
 
-
-
+.fa-facebook-square
+, .fa-facebook
+, .fa-twitter 
+, .fa-google-plus
+, .fa-github{
+	color: #9a9696;
+}
 
 
 
@@ -181,7 +192,6 @@ nav{
 
 /* why */
 /*================================================================*/
-
 .why{
 	/*background-color: #F8F8F8;*/
 	/*color: #0C0C0C;*/
@@ -194,6 +204,7 @@ nav{
 .why .overlay{
 	background: rgba(0, 0, 0, .92);
 	padding: 14vh 0 14vh;
+	min-height: 95vh;
 }
 .why_header{
 	text-align: center ;
@@ -442,6 +453,7 @@ nav{
 .contact .overlay{
 	padding-top:  70px;
 	padding-bottom: 80px;
+	min-height: 95vh;
 }
 .contact form *{
 	/*font-size: 18px !important;*/
@@ -473,3 +485,38 @@ nav{
 	border: 1px solid #23b8cd;
 	/*box-shadow: 0 10px 26px -10px rgba(156, 39, 176, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(156, 39, 176, 0.2);*/
 }
+
+
+/* footer */
+/*================================================================*/
+footer{
+	height: 300px;
+	overflow: hidden;
+	background-color: #494949;
+}
+.trapezoid{
+	/*#trapezoid */
+/*	border-top: 100px solid transparent;
+	border-bottom: 200px solid #494949;
+	border-left: 0px solid green;
+	border-right: 1500px solid  #494949;
+*/}
+
+.footer_icons {
+	text-align: center;	
+}
+.f_icon {
+	border-radius: 100% !important;
+	width: 50px !important;
+	height: 50px !important;
+	background-color: #313131	;
+}
+.f_icon i{
+	margin-top: 18px;
+
+}
+
+
+
+
+
