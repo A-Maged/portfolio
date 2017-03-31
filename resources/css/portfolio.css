@@ -15,6 +15,11 @@
 body{
 	font-family: "Oswald" !important;
 }
+.overlay{
+	background: rgba(0, 0, 0, .85);
+	min-height: 100%;
+	padding: 100px 0;
+}
 
 
 
@@ -33,7 +38,7 @@ header{
 	background-size: cover;
 	color: #ffffff;
 	text-align: center;
-	padding-bottom: 15px;
+	/*padding-bottom: 15px;*/
 }
 header h1{
 	font-weight: 900;
@@ -260,11 +265,6 @@ nav .icons i{
 	color: white;
 	text-align: center;
 
-}
-.overlay{
-	background: rgba(0, 0, 0, .85);
-	height: 100%;
-	padding: 100px 0;
 }
 .passion_txt{
 }
