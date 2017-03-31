@@ -4,16 +4,29 @@
 	<!-- comment out when working localy -->  	<!-- <base href="https://a-maged.github.io/portfolio/"></base> -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<script>
+		// https://github.com/filamentgroup/loadCSS
+		!function(e){"use strict"
+		var n=function(n,t,o){function i(e){return f.body?e():void setTimeout(function(){i(e)})}var d,r,a,l,f=e.document,s=f.createElement("link"),u=o||"all"
+		return t?d=t:(r=(f.body||f.getElementsByTagName("head")[0]).childNodes,d=r[r.length-1]),a=f.styleSheets,s.rel="stylesheet",s.href=n,s.media="only x",i(function(){d.parentNode.insertBefore(s,t?d:d.nextSibling)}),l=function(e){for(var n=s.href,t=a.length;t--;)if(a[t].href===n)return e()
+		setTimeout(function(){l(e)})},s.addEventListener&&s.addEventListener("load",function(){this.media=u}),s.onloadcssdefined=l,l(function(){s.media!==u&&(s.media=u)}),s}
+		"undefined"!=typeof exports?exports.loadCSS=n:e.loadCSS=n}("undefined"!=typeof global?global:this)
+	</script>
 	<!-- normalize css --> <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css">	
 	<!-- aos css --> <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
 	<!-- animate css --> <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<!-- bootstrap css -->	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<!-- font-awesome css -->  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">	
 
-	<!-- custom css --> <link rel="stylesheet" type="text/css" href="resources/css/portfolio.min.css">
-	<!-- custom css --> <link rel="stylesheet" type="text/css" href="resources/css/mobile-portfolio.min.css">
+	<!-- custom css -->	 <!-- <link rel="stylesheet" type="text/css" href="resources/css/portfolio.min.css"> -->
+	<!-- custom css -->	 <!-- <link rel="stylesheet" type="text/css" href="resources/css/mobile-portfolio.min.css"> -->
 
 <title>PSD Portfolio</title>
+<script>
+    loadCSS("resources/css/portfolio.min.css");
+    loadCSS("resources/css/mobile-portfolio.min.css");
+  </script>
+
 </head>
 <body>
 
