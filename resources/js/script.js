@@ -2,10 +2,10 @@
 
 
 // smooth scroll
-$(document).on('click', 'a', function(e){
+$(document).on('click', '.scroll', function(e){
 	e.preventDefault();
 	var body = $('body');	// cache for performance
-	var x = ($( $.attr(this, 'href') ).offset().top) -51;
+	var x = ($( $.attr(this, 'href') ).offset().top) - 51;
 	body.animate({
 		scrollTop: x
 	}, 900);
