@@ -447,12 +447,20 @@ nav .icons i{
 
 /*contact*/
 /*================================================================*/
+
+
+.zz{
+	background-color: #CCCCCC;
+
+}
 .contact{
 	background: url('../images/background.png');
+	-webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+	clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
 }
 .contact .overlay{
-	padding-top:  70px;
-	padding-bottom: 80px;
+	padding-top:  150px;
+	padding-bottom: 50px;
 	min-height: 95vh;
 }
 .contact form *{
