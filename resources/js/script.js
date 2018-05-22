@@ -26,16 +26,16 @@ $(window).scroll(function(){
 // utilize Animate.css animations on click
 animateOnClick( "button" , "fadeIn", 3000)
 function animateOnClick(selector , effect , animatDurationMs){
-	selector = $(selector);
+	var selector = $(selector);
 
-	selector.click(function(){
+	selector.on('click', function(){
 		$(this).addClass("animated "+ effect + " " + animatDurationMs)
 	});
 
 	//when animation ends
 	selector.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-			$(this).removeClass("animated "+ effect + " " + animatDurationMs)
-		});
+		$(this).removeClass("animated "+ effect + " " + animatDurationMs)
+	});
 }
 
 
