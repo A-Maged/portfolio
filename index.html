@@ -5,22 +5,14 @@
 	 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<script>
-		// https://github.com/filamentgroup/loadCSS
-		!function(e){"use strict"
-		var n=function(n,t,o){function i(e){return f.body?e():void setTimeout(function(){i(e)})}var d,r,a,l,f=e.document,s=f.createElement("link"),u=o||"all"
-		return t?d=t:(r=(f.body||f.getElementsByTagName("head")[0]).childNodes,d=r[r.length-1]),a=f.styleSheets,s.rel="stylesheet",s.href=n,s.media="only x",i(function(){d.parentNode.insertBefore(s,t?d:d.nextSibling)}),l=function(e){for(var n=s.href,t=a.length;t--;)if(a[t].href===n)return e()
-		setTimeout(function(){l(e)})},s.addEventListener&&s.addEventListener("load",function(){this.media=u}),s.onloadcssdefined=l,l(function(){s.media!==u&&(s.media=u)}),s}
-		"undefined"!=typeof exports?exports.loadCSS=n:e.loadCSS=n}("undefined"!=typeof global?global:this)
-	</script>
-	<!-- normalize css --> <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css">	 -->
-	<!-- aos css --> <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css"> -->
-	<!-- animate css --> <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"> -->
+	<!-- normalize css --> <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css">
+	<!-- aos css --> <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+	<!-- animate css --> <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<!-- bootstrap css -->	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<!-- font-awesome css -->  <!-- <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">	 -->
+	<!-- font-awesome css -->  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<!-- custom css -->	 <link rel="stylesheet" type="text/css" href="resources/css/portfolio.css">
-	<!-- custom css -->	 <link rel="stylesheet" type="text/css" href="resources/css/mobile-portfolio.min.css">
+	<!-- custom css -->	 <link rel="stylesheet" type="text/css" href="resources/css/mobile-portfolio.css">
 
 <title>PSD Portfolio</title>
 
@@ -48,11 +40,13 @@
 
 <!-- nav -->
 <!-- ================================ -->
-<nav class="navbar navbar-inverse">	
+<nav class="navbar navbar-inverse">
 	 <div class="container">
-	
+
 		<div class="navbar-header">
-		<!-- Burger button -->
+			<span class="navbar-brand visible-xs">Menu</span>
+
+			<!-- Burger button -->
 			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 				<span class="sr-only">Toggle navigation</span>
 				<span class="icon-bar"></span>
@@ -61,7 +55,7 @@
 			</button>
 
 		</div>	<!-- .navbar-header -->
-	
+
 		<div class="collapse  navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="icons nav visible-xs hidden-sm visible-md visible-lg  navbar-nav navbar-right">
 				<li>
@@ -69,9 +63,9 @@
 							<a href="#1"><i class="fa fa-lg fa-facebook-square" aria-hidden="true"></i></a>
 							<a href="#2"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>
 							<a href="#4"><i class="fa fa-lg fa-github" aria-hidden="true"></i></a>
-							<a href="#3"><i class="fa fa-lg fa-google-plus" aria-hidden="true"></i></a>			
+							<a href="#3"><i class="fa fa-lg fa-google-plus" aria-hidden="true"></i></a>
 					</div>
-						</li> <!-- .icons end -->
+				</li>
 			</ul>
 
 			<ul class="nav navbar-nav navbar-left">
@@ -81,7 +75,7 @@
   				<li ><a class="scroll" href="#p_work">RECENT WORK</a></li>
   				<li ><a class="scroll" href="#clients">PREVIOUS CLIENTS</a></li>
   				<li ><a class="scroll" href="#contact">CONTACT</a></li>
-				
+
 				<!-- dropdown -->
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
@@ -147,7 +141,7 @@
 	<div class="overlay">
 		<div class="container">
 			<div class="row">
-				<!-- <div class=" col-md-6 why_img"></div> -->			
+				<!-- <div class=" col-md-6 why_img"></div> -->
 				<div class=" why_header">
 					<h3>WHA<span>T W</span>E DO</h3>
 				</div>
@@ -209,7 +203,7 @@
 					</div>
 				</div><!-- why_body -->
 			</div><!-- .row -->
-		</div>	<!-- .container -->	
+		</div>	<!-- .container -->
 
 	</div>	<!-- .overlay -->
 </section>
@@ -226,43 +220,52 @@
 
 		<div class="row">
 			<div class="site col-sm-6 col-md-4">
-				<img alt="" src="resources/images/i11.png">
-				<h4>free bag mockup</h4>
-				<p>Creative / ideas</p> 
+				<a href="#">
+					<img alt="" src="resources/images/i11.png">
+					<h4>free bag mockup</h4>
+					<p>Creative / ideas</p>
+				</a>
 			</div>	<!-- .site -->
-			
-			<div class="site col-sm-6 col-md-4">
-				<img alt=""  src="resources/images/mc.png	">
-				<h4>free bag mockup</h4>
-				<p>Creative / ideas</p> 
-			</div>	<!-- .site -->
-			
-			<div class="site col-sm-6 col-md-4">
-				<img alt="" src="resources/images/bottled.png">
-				<h4>free bag mockup</h4>
-				<p>Creative / ideas</p> 
-			</div>	<!-- .site -->
-			
-			<div class="site col-sm-6 col-md-4">
-				<img alt="" src="resources/images/bicycle.png">
-				<h4>free bag mockup</h4>
-				<p>Creative / ideas</p> 
-			</div>	<!-- .site -->
-			
-			<div class="site col-sm-6 col-md-4">
-				<img alt="" src="resources/images/i11.png">
-				<h4>free bag mockup</h4>
-				<p>Creative / ideas</p> 
-			</div>	<!-- .site -->
-			
-			<div class="site col-sm-6 col-md-4">
-				<img alt="" src="resources/images/i11.png">
-				<h4>free bag mockup</h4>
-				<p>Creative / ideas</p> 
-			</div>	<!-- .site -->
-			
 
+			<div class="site col-sm-6 col-md-4">
+				<a href="#">
+					<img alt=""  src="resources/images/mc.png	">
+					<h4>free bag mockup</h4>
+					<p>Creative / ideas</p>
+				</a>
+			</div>	<!-- .site -->
 
+			<div class="site col-sm-6 col-md-4">
+				<a href="#">
+					<img alt="" src="resources/images/bottled.png">
+					<h4>free bag mockup</h4>
+					<p>Creative / ideas</p>
+				</a>
+			</div>	<!-- .site -->
+
+			<div class="site col-sm-6 col-md-4">
+				<a href="#">
+					<img alt="" src="resources/images/bicycle.png">
+					<h4>free bag mockup</h4>
+					<p>Creative / ideas</p>
+				</a>
+			</div>	<!-- .site -->
+
+			<div class="site col-sm-6 col-md-4">
+				<a href="#">
+					<img alt="" src="resources/images/i11.png">
+					<h4>free bag mockup</h4>
+					<p>Creative / ideas</p>
+				</a>
+			</div>	<!-- .site -->
+
+			<div class="site col-sm-6 col-md-4">
+				<a href="#">
+					<img alt="" src="resources/images/i11.png">
+					<h4>free bag mockup</h4>
+					<p>Creative / ideas</p>
+				</a>
+			</div>	<!-- .site -->
 
 		</div><!-- .row -->
 	</div><!-- .container -->
@@ -288,9 +291,9 @@
 					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				</p>				
+				</p>
 			</div>
-	
+
 			<button>send us an email</button>
 		</div> <!-- .container .passion_txt -->
 	</div> <!-- .overlay -->
@@ -301,71 +304,71 @@
 <!-- ================================ -->
 <section class="clean">
 	<div class="container">
-		<div class="row col-md-7">			
+		<div class="row col-md-7">
 			<div class="clean_header">
 				<h3><span>cl</span>ean and clear concept</h3>
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				</p>			
+				</p>
 			</div>
-	
+
 			<div class="clean_feature col-md-6">
 				<div class="diamond">
-					<i class="fa fa-laptop " aria-hidden="true"></i>		
-				</div>	
+					<i class="fa fa-laptop " aria-hidden="true"></i>
+				</div>
 				<div class="clean_body">
 					<h4>Fully responsive</h4>
 					<p>
 						proident, officia deserunt mollit anim id est laborum.
 						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</p>									
+					</p>
 				</div> <!-- clean_body -->
 			</div><!-- .clean_feature -->
-		
+
 			<div class="clean_feature col-md-6">
 				<div class="diamond">
-					<i class="fa fa-gift " aria-hidden="true"></i>		
-				</div>	
+					<i class="fa fa-gift " aria-hidden="true"></i>
+				</div>
 				<div class="clean_body">
 					<h4>Fully responsive</h4>
 					<p>
 						proident, officia deserunt mollit anim id est laborum.
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</p>									
+					</p>
 				</div> <!-- clean_body -->
 			</div><!-- .clean_feature -->
-		
+
 			<div class="clean_feature col-md-6">
 				<div class="diamond">
-					<i class="fa fa-anchor " aria-hidden="true"></i>		
-				</div>	
+					<i class="fa fa-anchor " aria-hidden="true"></i>
+				</div>
 				<div class="clean_body">
 					<h4>Fully responsive</h4>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 						proident, officia deserunt mollit anim id est laborum.
-					</p>									
+					</p>
 				</div> <!-- clean_body -->
 			</div><!-- .clean_feature -->
-		
+
 			<div class="clean_feature col-md-6">
 				<div class="diamond">
-					<i class="fa fa-diamond " aria-hidden="true"></i>		
-				</div>	
+					<i class="fa fa-diamond " aria-hidden="true"></i>
+				</div>
 				<div class="clean_body">
 					<h4>Fully responsive</h4>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-					</p>									
+					</p>
 				</div> <!-- clean_body -->
 			</div><!-- .clean_feature -->
-		
+
 		</div><!-- .row -->
 
 		<img alt="" class="mac pull-right  col-md-5" src="resources/images/mc.png">
@@ -388,7 +391,7 @@
 
 
 				<div class="col-sm-6 col-md-4"> <img alt="" src="resources/images/clients-logos/klein.png"> </div>
-				<div class="col-sm-6 col-md-4"> <img alt="" src="resources/images/clients-logos/nike.png"> </div>			
+				<div class="col-sm-6 col-md-4"> <img alt="" src="resources/images/clients-logos/nike.png"> </div>
 				<div class="col-sm-6 col-md-4"> <img alt="" src="resources/images/clients-logos/bong.png"> </div>
 
 
@@ -415,20 +418,20 @@
 			<h3>CONTACT WITH US</h3>
 			<form class="col-xs-12 col-md-10 col-md-offset-1" action="#" method="post">
 					<div class="col-xs-12 col-sm-6 form-group">
-						<input type="text" placeholder="Name" name="name" class="form-control ">		
+						<input type="text" placeholder="Name" name="name" class="form-control ">
 					</div>
 
-					<div class="col-xs-12 col-sm-6 form-group">	
+					<div class="col-xs-12 col-sm-6 form-group">
 						<input type="email" placeholder="Your Email" name="email" class="form-control">
 					</div>
 
 					<div class="col-xs-12 col-sm-6 form-group">
-						<input type="text" placeholder="Address" name="address" class="form-control" >			
-					</div>	
+						<input type="text" placeholder="Address" name="address" class="form-control" >
+					</div>
 
 					<div class="col-xs-12 col-sm-6 form-group">
-						<input type="number"  name="phone" placeholder="Phone" id="Phone" class="form-control">          
-					</div>	
+						<input type="number"  name="phone" placeholder="Phone" id="Phone" class="form-control">
+					</div>
 
 					<div class="col-xs-12 form-group">
 						<textarea rows="7" placeholder="Message" name="message" class="form-control"></textarea>
@@ -464,8 +467,8 @@
 						<i class="fa fa-lg fa-google-plus" aria-hidden="true"></i>
 				</div>
 			</a>
-			
- -->		
+
+ -->
 		<!-- </div> -->	<!-- .footer_icons -->
 	<!-- </div> -->	<!-- .trapezoid -->
 <!-- </footer> -->
@@ -473,24 +476,16 @@
 
 
 
-<script>
-    loadCSS("https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css");
-    // loadCSS("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
-    // loadCSS("resources/css/portfolio.min.css");
-    // loadCSS("resources/css/mobile-portfolio.min.css");
-    loadCSS("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
-    loadCSS("https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css");
-    loadCSS("https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css");
-  </script>
-
 <!-- jQuery --><script  src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!-- custom js --><script type="text/javascript" src="resources/js/script.min.js"></script>
+<!-- custom js <script type="text/javascript" src="resources/js/script.min.js"></script>-->
+<!-- custom js --><script type="text/javascript" src="resources/js/script.js"></script>
 <!-- aos js --> <script  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
 <!-- Bootstrap js --><script  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 <script type="text/javascript">
 	AOS.init({
 	  duration: 500,
-    	})
+	})
 </script>
 
 </body>

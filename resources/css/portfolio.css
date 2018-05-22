@@ -15,6 +15,9 @@
 body{
 	font-family: "Oswald" !important;
 }
+a{
+	color: inherit;
+}
 .overlay{
 	background: rgba(0, 0, 0, .7);
 	min-height: 100%;
@@ -72,9 +75,9 @@ header button{
 	font-size: 10px;
 }
 header button:first-of-type{
-	background-color: #14c3dc;	
+	background-color: #14c3dc;
 	color: white;
-} 
+}
 
 
 
@@ -94,19 +97,23 @@ nav{
 }
 
 .navbar{
-	border-radius: 0;	
+	border-radius: 0;
 }
 .navbar-inverse{
 	/*background-color: #14c3dc*/
 }
-.navbar-brand{
+.navbar-inverse .navbar-brand{
+	color: #fff;
+	cursor: default;
+}
+/* .navbar-brand{
 	padding: 0;
-	margin: -4px 0 0;	
+	margin: -4px 0 0;
 	margin-left:8px;
 }
 .navbar-brand img{
 	height: 60px;
-}
+} */
 .dropdown-menu{
 	background-color: #222222;
 }
@@ -137,7 +144,7 @@ nav .icons i{
 
 .fa-facebook-square
 , .fa-facebook
-, .fa-twitter 
+, .fa-twitter
 , .fa-google-plus
 , .fa-github{
 	color: #9a9696;
@@ -172,7 +179,7 @@ nav .icons i{
 .txt h3 span{
 	color: black;
 	border-bottom: 3px solid black;
-	padding-bottom: 15px; 
+	padding-bottom: 15px;
 	width: 100px;
 }
 .txt button{
@@ -222,7 +229,7 @@ nav .icons i{
 .why_header h3 span{
 	/*color: black;*/
 	border-bottom: 3px solid crimson !important;
-	padding-bottom: 15px; 
+	padding-bottom: 15px;
 	width: 100px;
 }
 .why_body {
@@ -282,7 +289,7 @@ nav .icons i{
 	margin-bottom: 35px;
 
 }
-.passion_icon::before{	
+.passion_icon::before{
 	content: "";
 	display: inline-block;
 	width: 80px;
@@ -334,24 +341,24 @@ nav .icons i{
 .clean_header h3 span{
 	color: black;
 	border-bottom: 3px solid black;
-	padding-bottom: 15px; 
+	padding-bottom: 15px;
 }
-.diamond { 
- 	width: 0; 
- 	height: 0; 
- 	border: 25px solid transparent; 
- 	border-bottom-color: #e28573; 
- 	position: relative; 
+.diamond {
+ 	width: 0;
+ 	height: 0;
+ 	border: 25px solid transparent;
+ 	border-bottom-color: #e28573;
+ 	position: relative;
 	margin-bottom: 35px;
- } 
+ }
 .diamond:after {
- 	content: ''; 
- 	position: absolute; 
- 	left: -25px; 
- 	top: 25px; 
- 	width: 0; 
- 	height: 0; 
- 	border: 25px solid transparent; 
+ 	content: '';
+ 	position: absolute;
+ 	left: -25px;
+ 	top: 25px;
+ 	width: 0;
+ 	height: 0;
+ 	border: 25px solid transparent;
  	border-top-color: #e28573;
 	z-index: 0;
 }
@@ -392,7 +399,7 @@ nav .icons i{
 .p_work h3 span{
 	color: black;
 	border-bottom: 3px solid black;
-	padding-bottom: 15px; 
+	padding-bottom: 15px;
 }
 .site{
 	/*padding: 0;*/
@@ -425,13 +432,13 @@ nav .icons i{
 	/*color: white;*/
 	color: #4c4c4c;
 	font-size: 35px;
-	font-weight:900; 
+	font-weight:900;
 	margin-bottom: 80px;
 }
 
 .clients h3 span{
 	border-bottom: 3px solid #4c4c4c;
-	padding-bottom: 15px; 
+	padding-bottom: 15px;
 }
 .clients img{
 	/*max-width: 160px;*/
@@ -511,7 +518,7 @@ footer{
 */}
 
 .footer_icons {
-	text-align: center;	
+	text-align: center;
 }
 .f_icon {
 	border-radius: 100% !important;
@@ -523,8 +530,3 @@ footer{
 	margin-top: 18px;
 
 }
-
-
-
-
-
